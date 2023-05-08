@@ -22,3 +22,11 @@ variable "system_name" {
     default = "modelserving"
     description = "Name for system being deployed."
 }
+
+variable "service_principal_client_id" {
+  description = "Azure Kubernetes Service Cluster service principal client ID. "
+}
+
+variable "service_principal_client_secret" {
+  description = "Azure Kubernetes Service Cluster client secret."
+}
