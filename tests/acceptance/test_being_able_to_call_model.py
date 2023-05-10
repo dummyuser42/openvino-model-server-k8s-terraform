@@ -20,13 +20,13 @@ class TestCallingModel:
         with open("tests/acceptance/data/labels.txt") as f:
             labels = f.readlines()
         
-        expected_response = "Saint Bernard"
+        expected_image_label = "Saint Bernard"
 
 
         # Act
         actual_response = sut.predict(inputs=payload, model_name=MODEL_NAME)
-        actual_predicted_image = labels[actual_response[0].argmax()].strip().replace("\n", "")
+        actual_predicted_image_label = labels[actual_response[0].argmax()].strip().replace("\n", "")
 
 
         # Assert
-        assert expected_response == actual_predicted_image.strip().replace("\n", "")
+        assert expected_image_label == actual_predicted_image_label
