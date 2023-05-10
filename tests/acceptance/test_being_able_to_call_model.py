@@ -1,5 +1,4 @@
 from ovmsclient import make_grpc_client
-import numpy as np
 
 MODEL_URL = "20.82.217.204:80"
 MODEL_NAME = "inception-resnet"
