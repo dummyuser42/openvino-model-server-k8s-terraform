@@ -77,7 +77,7 @@ The OpenVINO Model Server should now be ready to be deployed using the helm char
 
 `helm upgrade -f open_vino_model_server/values.yaml ovms-app open_vino_model_server --set azure_storage_connection_string=$STORAGE_ACCOUNT_CONNECTION_STRING`
 
-Once run, check the resouces are created. This should include a deployment for the model server and a Cluster IP service exposing two endpoints for grpc and REST on ports 8080 and 8081 respectively
+Once run, check the resouces are created. This should include a deployment for the model server and a Cluster IP service exposing two endpoints for gRPC and REST on ports 8080 and 8081 respectively
 
 ### 6. Deploy Load Balancer
 
