@@ -1,5 +1,6 @@
 from ovmsclient import make_grpc_client
 
+# USE PUBLIC IP ADDRESS OF LOAD BALANCER
 MODEL_URL = "20.107.134.252:80"
 MODEL_NAME = "inception-resnet"
 
