@@ -75,7 +75,7 @@ Get the connection string from the Azure Storage Account and set it as an enviro
 
 The OpenVINO Model Server should now be ready to be deployed using the helm chart included in the repo. Note that this is obtained from the [openvinotoolkit GitHub](https://github.com/openvinotoolkit/operator/blob/main/helm-charts/ovms/README.md)
 
-`helm upgrade -f open_vino_model_server/values.yaml ovms-app open_vino_model_server --set azure_storage_connection_string=$STORAGE_ACCOUNT_CONNECTION_STRING`
+`helm upgrade -f open_vino_model_server/values.yaml ovms-app open_vino_model_server --set models_repository.azure_storage_connection_string=${STORAGE_ACCOUNT_CONNECTION_STRING}`
 
 Once run, check the resouces are created. This should include a deployment for the model server and a Cluster IP service exposing two endpoints for gRPC and REST on ports 8080 and 8081 respectively
 
